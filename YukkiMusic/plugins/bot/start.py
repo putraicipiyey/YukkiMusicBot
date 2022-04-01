@@ -208,7 +208,7 @@ async def start_comm(client, message: Message, _):
                     reply_markup=InlineKeyboardMarkup(out),
                 )
         else:
-            await message.reply_text(
+            await message.reply_message(
                 _["start_2"].format(config.MUSIC_BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(out),
             )
